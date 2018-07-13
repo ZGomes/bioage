@@ -1,0 +1,25 @@
+footer
+    margin-top 50px
+    background-color $black
+    padding 20px 0
+    .column
+        align-items center
+    .author
+        color $white
+        a
+            color $white
+    .socialmedia
+        margin-top 1rem
+        display flex
+        li
+            padding-right 15px
+            opacity 0.5
+            &:hover
+                opacity 1
+@media screen and (min-width 481px)
+    footer
+        .column
+            flex-direction row
+            justify-content space-between
+        .socialmedia
+            margin-top 0

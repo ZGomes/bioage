@@ -1,0 +1,48 @@
+#schedule
+    .column
+        margin 20px auto 0 auto
+        align-items center
+    .schedule__table
+        width 100%
+        margin-top 30px
+        thead
+            tr
+                background-color $black
+            th
+                color $white
+                padding 20px 0
+        tbody
+            tr
+                border 1px solid $black
+                td
+                    padding 10px 5px
+                    &:before
+                        content ""
+                        background-size: contain;
+                        padding: 13px;
+                        margin-right: 10px;
+                        display: inline-block;
+                    &.date:before
+                        background url("../../assets/icons/calendar.svg") no-repeat
+                    &.local:before
+                        background url("../../assets/icons/placeholder.svg") no-repeat
+    .btn
+        margin-top 5%
+@media screen and (min-width: 481px)
+    #schedule
+        .schedule__table
+            width 75%
+            tr
+                display flex
+                align-items center
+                justify-content space-around
+            tbody
+                tr
+                    border-top-color transparent
+                    td
+                        width 50%
+                        text-align center
+                        display flex
+                        align-items center
+                        justify-content center
+                        padding 10px

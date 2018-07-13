@@ -1,0 +1,53 @@
+#speaker
+    .column
+        align-items center
+    .title
+        text-align center
+    .description
+        width 100%
+        text-align center
+    .speaker__content
+        display flex
+        justify-content center
+        flex-wrap wrap
+        margin-top 50px
+        .speaker-card
+            width 80%
+            & + .speaker-card
+                margin-top 40px
+            .speaker-card__img
+                width 100%
+                border-radius 50%
+            .speaker-card__description
+                display flex
+                flex-direction column
+                .speaker-card__name
+                    text-align center
+                    color $primary
+                    margin-top 10px
+                    font-size 1.4rem
+                    font-weight 600
+                .speaker-card__office
+                    text-align end
+                    margin-top 5px
+                    font-size 1.2rem
+                    font-weight 400
+                .speaker-card__bio
+                    text-align justify
+                    margin-top 5px
+                    font-weight 200
+                    font-size 1rem
+
+@media screen and (min-width: 481px)
+    #speaker
+        .speaker__content
+            justify-content space-between
+            .speaker-card
+                width 30%
+                min-width 225px
+                max-width 350px
+                margin-top 25px
+                margin-right 15px
+                & + .speaker-card
+                    margin-top 25px
+                    margin-right 15px

@@ -1,0 +1,40 @@
+html
+    color $black
+    font-family "Montserrat", sans-serif
+
+.title
+    color $black
+    font-size 2rem
+    font-weight 800
+
+.title.line
+    margin-bottom 10px
+    &:after
+        content ""
+        display block
+        margin 10px calc("50% - 50px")
+        width 100px
+        height 8px
+        background-color $secondary
+p
+    font-size 1rem
+    font-weight 200
+
+.description
+    font-size 1.3rem
+    font-weight 400
+
+a
+    text-decoration none
+@media screen and (min-width: 481px)
+    .title
+        font-size 3rem
+    .description
+        font-size 1.2rem
+
+
+@media screen and (min-width: 481px) and (max-width: 720px)
+    .title
+        font-size 2.5rem
+    .description
+        font-size 1.2rem
