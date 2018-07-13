@@ -82,7 +82,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['./dist/*']),
         new UglifyJSPlugin({
             include: /\.min\.js$/,
         }),

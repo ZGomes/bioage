@@ -31,7 +31,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --config webpack.config.js --watch",
-    "start": "webpack-dev-server --open --port 8080"
+    "start": "webpack-dev-server --open --port 8080",
     "deploy": "gh-pages -d dist"
   }
 }
